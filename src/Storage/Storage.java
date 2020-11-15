@@ -136,7 +136,10 @@ public class Storage extends Items{
 
 
     protected static void sortStorage(){
-        Collections.sort(inStorage, Comparator.comparing(o -> o.getClass().getName()));
+
+        System.out.println("Items have been sorted");
+
+        inStorage.sort(Comparator.comparing(o -> o.getClass().getName()));
     }
 
 

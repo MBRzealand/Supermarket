@@ -12,7 +12,6 @@ public class Main extends Storage{
         restockOranges(2);
         restockCorn(1);
         restockSalad(2);
-
         System.out.println();
 
         itemsInStorage();
@@ -32,16 +31,22 @@ public class Main extends Storage{
         amountInStorage("Salad");
         System.out.println();
 
-        restockALL(2);
+        restockALL(10);
 
         storageOverview();
         System.out.println();
 
-        amountInStorage("Cucumber"); // was 0 before is 2 after RestockAll
+        amountInStorage("Cucumber"); // was 0 before is 10 after RestockAll
         System.out.println();
 
         sortStorage();// everything is sorted neatly now
+        System.out.println();
+
         storageOverview();
+        System.out.println();
+
+        itemsInStorage();   // 69 objects in storage... happy little accidents
+        System.out.println();
 
 
     }
