@@ -1,17 +1,19 @@
 package FruitSection;
 
-import FoodProduct.Food;
+import FoodProduct.Items;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-public class Fruits extends Food {
+public class Fruits extends Items {
 
     private final LocalDateTime currentDate = LocalDateTime.now();
 
     public LocalDateTime getCurrentDate() {
         return currentDate;
     }
+
+
 
     static LocalDateTime expDate(){
 
@@ -22,19 +24,11 @@ public class Fruits extends Food {
         return now.plusDays(daysFromNow);
     }
 
-    static void isRipe(Fruits x){
-
-
-
-    }
-
 
     static String formatDate(LocalDateTime x){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
         return formatter.format(x);
     }
-
-
 
 }

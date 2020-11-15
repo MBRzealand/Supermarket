@@ -1,14 +1,22 @@
 package FoodProduct;
 
-import java.text.DecimalFormat;
+import FruitSection.Apple;
+import FruitSection.Fruits;
+import FruitSection.Lemon;
+import FruitSection.Orange;
 
-public class Food {
+import java.text.DecimalFormat;
+import java.util.ArrayList;
+
+public class Items{
 
     static String pattern = ".00";
 
     static DecimalFormat df = new DecimalFormat(pattern);
 
     private double price;
+
+
 
 
 
@@ -21,5 +29,11 @@ public class Food {
     public void setPrice(double price) {
         this.price = price;
     }
-    // -----------------------------------------------------------------------------------------------------------------
+
+
+// -----------------------------------------------------------------------------------------------------------------
+
+
+
+
 }
